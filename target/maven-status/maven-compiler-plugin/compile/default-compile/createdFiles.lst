@@ -1,0 +1,7 @@
+app\persistance\models\users\UserStatus.class
+app\controllers\PromotorController.class
+app\persistance\models\users\User.class
+app\persistance\dao\UsersDao.class
+app\persistance\models\users\UserDetails.class
+app\persistance\models\users\UserType.class
+app\persistance\repositories\UsersRepository.class
