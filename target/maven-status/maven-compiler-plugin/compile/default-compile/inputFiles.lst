@@ -1,11 +1,14 @@
 D:\Java\intellijworkspace\webapp\src\main\java\app\Application.java
 D:\Java\intellijworkspace\webapp\src\main\java\app\controllers\HomeController.java
-D:\Java\intellijworkspace\webapp\src\main\java\app\persistance\repositories\UsersRepository.java
-D:\Java\intellijworkspace\webapp\src\main\java\app\config\HibernateConfiguration.java
+D:\Java\intellijworkspace\webapp\src\main\java\app\persistance\repositories\TematyRepository.java
+D:\Java\intellijworkspace\webapp\src\main\java\app\persistance\dao\TematyDao.java
 D:\Java\intellijworkspace\webapp\src\main\java\app\controllers\PromotorController.java
 D:\Java\intellijworkspace\webapp\src\main\java\app\persistance\models\users\UserType.java
 D:\Java\intellijworkspace\webapp\src\main\java\app\persistance\models\users\UserStatus.java
 D:\Java\intellijworkspace\webapp\src\main\java\app\persistance\dao\UsersDao.java
-D:\Java\intellijworkspace\webapp\src\main\java\app\persistance\models\users\User.java
 D:\Java\intellijworkspace\webapp\src\main\java\app\config\WebConfiguration.java
+D:\Java\intellijworkspace\webapp\src\main\java\app\persistance\repositories\UsersRepository.java
+D:\Java\intellijworkspace\webapp\src\main\java\app\config\HibernateConfiguration.java
+D:\Java\intellijworkspace\webapp\src\main\java\app\persistance\models\tematy\Temat.java
+D:\Java\intellijworkspace\webapp\src\main\java\app\persistance\models\users\User.java
 D:\Java\intellijworkspace\webapp\src\main\java\app\persistance\models\users\UserDetails.java

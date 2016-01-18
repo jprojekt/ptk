@@ -13,6 +13,7 @@
     <h1>Panel promotora</h1>
     <a href="<c:url value="/panel-promotora/dyplomanci" />">Dyplomanci</a>
     <a href="<c:url value="/panel-promotora/dodaj-dyplomante" />">Dodaj dyplomantę</a>
+    <a href="<c:url value="/panel-promotora/tematy" />">Tematy</a>
     <a href="<c:url value="/panel-promotora/dodaj-temat" />">Dodaj temat</a>
     <a href="<c:url value="/panel-promotora/archiwum" />">Archiwum</a>
 </body>

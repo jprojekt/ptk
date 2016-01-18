@@ -6,18 +6,11 @@
 <html>
 <head>
     <style>
-        table, th, td {
-            border: 4px solid black;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            padding: 10px;
-            text-align: center;
-        }
+        table {border-collapse:collapse; table-layout:fixed; width:500px;}
+        table td {border:solid 3px; text-align: center; width:400px; word-wrap:break-word;}
     </style>
     <title>
-        Dyplomanci
+        Tematy
     </title>
 </head>
 <body>
@@ -34,21 +27,17 @@
 <table>
 
     <b><tr>
-        <td>Imie</td>
-        <td>Nazwisko</td>
-        <td>Temat</td>
-        <td>Status</td>
-        <td>Więcej</td>
+        <td>Tytul</td>
+        <td>Opis</td>
+        <td>Stopien</td>
 
     </tr></b>
-    <c:forEach items="${dyplomanci}" var="dyplomanta">
+    <c:forEach items="${tematy}" var="temat">
 
         <tr>
-            <td>${dyplomanta.userDetails.imie}</td>
-            <td>${dyplomanta.userDetails.nazwisko}</td>
-            <td>${dyplomanta.userDetails.temat}</td>
-            <td>${dyplomanta.userDetails.userStatus}</td>
-            <td><a href="#">+</a></td>
+            <td>${temat.tytul}</td>
+            <td>${temat.opis}</td>
+            <td>${temat.stopien}</td>
         </tr>
 
     </c:forEach>

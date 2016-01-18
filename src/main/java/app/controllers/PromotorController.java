@@ -1,6 +1,8 @@
 package app.controllers;
 
+import app.persistance.dao.TematyDao;
 import app.persistance.dao.UsersDao;
+import app.persistance.models.tematy.Temat;
 import app.persistance.models.users.User;
 import app.persistance.models.users.UserDetails;
 import app.persistance.models.users.UserStatus;
@@ -21,6 +23,9 @@ public class PromotorController {
 
     @Autowired
     UsersDao usersRepo;
+
+    @Autowired
+    TematyDao tematyRepo;
 
     @RequestMapping(value = "", method = RequestMethod.GET)
     public String printMainPage(ModelMap model) {
@@ -65,10 +70,32 @@ public class PromotorController {
         return "redirect:/panel-promotora/dodaj-dyplomante";
     }
 
+    @RequestMapping(value = "/tematy", method = RequestMethod.GET)
+    public String printTematy(ModelMap model) {
+
+        model.addAttribute("tematy", tematyRepo.getAll());
+
+        return "panel-promotora-tematy";
+    }
+
     @RequestMapping(value = "/dodaj-temat", method = RequestMethod.GET)
     public String printDodajTemat(ModelMap model) {
 
         return "panel-promotora-dodaj-temat";
+    }
+
+    @RequestMapping(value = "/dodaj-temat/dodaj", method = RequestMethod.POST)
+    public String proceedAddTemat(
+            @RequestParam(name="tytul", required = true) String tytul,
+            @RequestParam(name="opis", required = true) String opis,
+            @RequestParam(name="stopien", required = true) String stopien,
+            ModelMap model) {
+
+        Temat temat = new Temat(tytul, opis, stopien);
+
+        tematyRepo.add(temat);
+
+        return "redirect:/panel-promotora/dodaj-temat";
     }
 
     @RequestMapping(value = "/archiwum", method = RequestMethod.GET)

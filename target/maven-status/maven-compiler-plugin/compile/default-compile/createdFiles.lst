@@ -1,7 +1,10 @@
 app\persistance\models\users\UserStatus.class
 app\controllers\PromotorController.class
 app\persistance\models\users\User.class
+app\persistance\models\tematy\Temat.class
 app\persistance\dao\UsersDao.class
+app\persistance\dao\TematyDao.class
 app\persistance\models\users\UserDetails.class
 app\persistance\models\users\UserType.class
+app\persistance\repositories\TematyRepository.class
 app\persistance\repositories\UsersRepository.class
